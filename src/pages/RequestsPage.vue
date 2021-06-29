@@ -3,7 +3,9 @@
     <div class="mx-auto max-w-7xl lg:px-8">
       <h1 class="my-14 text-gray-400 tracking-tight font-extrabold text-4xl lg:mt-6">Submit a Request</h1>
       <div v-if="loading">Loading request form ...</div>
-      <div data-canny />
+      <div key="14ada0f9-0042-516b-3b3d-23f5d1638ec0">
+        <div data-canny />
+      </div>
     </div>
   </div>
 </template>
@@ -22,12 +24,6 @@ export default {
     Canny('render', {
       boardToken: '14ada0f9-0042-516b-3b3d-23f5d1638ec0',
       basePath: '/requests'
-    });
-
-    Canny('initChangelog', {
-      appID: '5fb2ac1135378d7cc36a2bf1',
-      position: 'bottom',
-      align: 'left'
     });
   }
 };
