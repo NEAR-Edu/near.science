@@ -57,7 +57,7 @@
       <div class="mt-8 lg:mt-0">
         <div class="mt-5 space-y-2 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
           <p>Are you interested in contributing to <strong>NEAR.science</strong>?</p>
-          <p>If you are, please register by clicking the button below and sharing your interests.</p>
+          <p>If so, please register by clicking the button below and sharing your interests.</p>
           <p>We're always looking for new contributors. Besides, Winston would like some company.</p>
         </div>
       </div>
