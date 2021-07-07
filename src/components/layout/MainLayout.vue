@@ -18,7 +18,7 @@
                 </div>
               </div>
               <div class="hidden space-x-8 md:flex md:ml-10">
-                <router-link v-for="item in navigation" :key="item.name" :to="item.href" class="text-base font-medium text-white hover:text-gray-300">{{ item.name }}</router-link>
+                <router-link v-for="item in navigation" :key="item.name" :to="{ name: item.route }" class="text-base font-medium text-white hover:text-gray-300">{{ item.name }}</router-link>
               </div>
             </div>
           </nav>
@@ -62,9 +62,10 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline';
 import FooterSection from './FooterSection.vue';
 
 const navigation = [
-  { name: 'Requests', href: '/requests' },
-  { name: 'Reports', href: '/reports' },
-  { name: 'About', href: '/about' }
+  { name: 'Requests', route: 'requests' },
+  { name: 'Status', route: 'status' },
+  { name: 'Reports', route: 'reports' },
+  { name: 'About', route: 'about' }
 ];
 
 export default {

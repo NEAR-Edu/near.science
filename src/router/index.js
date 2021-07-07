@@ -2,41 +2,35 @@ import { createWebHistory, createRouter } from 'vue-router';
 
 import HomePage from '@/pages/HomePage';
 import RequestsPage from '@/pages/RequestsPage';
+import StatusPage from '@/pages/StatusPage';
 import ReportsPage from '@/pages/ReportsPage';
 import AboutPage from '@/pages/AboutPage';
-// import ListVideosPage from '@/pages/ListVideosPage';
-// import SingleVideoPage from '@/pages/SingleVideoPage';
-// import ListCollectionsPage from '@/pages/ListCollectionsPage';
-// import SingleCollectionPage from '@/pages/SingleCollectionPage';
-// import ListAuthorsPage from '@/pages/ListAuthorsPage';
-// import SingleAuthorPage from '@/pages/SingleAuthorPage';
-// import ContributePage from '@/pages/ContributePage.vue';
-// import AboutPage from '@/pages/AboutPage';
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: HomePage
   },
   {
     path: '/requests',
-    name: 'Requests',
+    alias: '/requests/*',
+    name: 'requests',
     component: RequestsPage
   },
   {
-    path: '/requests/*',
-    name: 'AnyRequests',
-    component: RequestsPage
+    path: '/status',
+    name: 'status',
+    component: StatusPage
   },
   {
     path: '/reports',
-    name: 'Reports',
+    name: 'reports',
     component: ReportsPage
   },
   {
     path: '/about',
-    name: 'About',
+    name: 'about',
     component: AboutPage
   }
 ];

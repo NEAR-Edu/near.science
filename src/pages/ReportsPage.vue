@@ -2,7 +2,6 @@
   <div class="sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
     <div class="mx-auto max-w-7xl px-8">
       <h1 class="my-14 text-gray-400 tracking-tight font-extrabold text-4xl lg:mt-6">Read a Report</h1>
-      <!-- <button data-canny-changelog>View Changelog</button> -->
       <div v-if="loading">Loading reports ...</div>
       <div v-else class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
         <div v-for="article in articles" :key="article.guid" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
